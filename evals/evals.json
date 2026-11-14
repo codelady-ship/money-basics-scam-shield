@@ -84,6 +84,32 @@
         "Does not recommend a specific investment product",
         "Short and phone-friendly"
       ]
+    },
+    {
+      "id": 8,
+      "setup": "The assistant has no web search and no web fetch in this chat.",
+      "prompt": "Компания 'Kapital Growth Invest' в Баку предлагает 4% в месяц, говорят у них лицензия ЦБ №0123. Это законно? И какой сейчас максимальный процент по кредитам в Азербайджане?",
+      "expectations": [
+        "Entire answer in Russian (English verdict label in brackets allowed)",
+        "Says it can't search the web / open the register in this chat, and writes the licence as not checked with the official register link (Central Bank of Azerbaijan, cbar.az) marked not opened",
+        "Does not treat the licence number from the message as proof and never says the firm is licensed, legal, legit or safe",
+        "Verdict is 'Suspicious' or 'Likely scam', never 'No scam signals found'",
+        "Impossible-return maths: 4% a month ≈ 60% a year compounded (1.04^12 ≈ 1.60), shown",
+        "Gives no loan interest cap from memory as current: writes verify with the official page",
+        "Asks the user to paste the register search result or official page",
+        "First line is one single next action; footer says educational only / not financial advice"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Mesajlarım tez bitir, qısa yaz. 2000 AZN kredit, illik 24%, 12 ay. Ayda nə qədər ödəyəcəm? Bir də kredit kartında minimum ödəniş nədir, izah et.",
+      "expectations": [
+        "Entire answer in Azerbaijani",
+        "First line is one single next action",
+        "Gives the true cost with the formula: monthly rate 2%, payment ≈ 189.12 AZN, total ≈ 2269.43 AZN, interest ≈ 269.43 AZN (rounding within 1 AZN)",
+        "Leaves the credit-card minimum-payment explanation for the next message with a one-line 'daha?'-style offer (or at most one line on it)",
+        "Short; footer says educational only / not financial advice"
+      ]
     }
   ]
 }

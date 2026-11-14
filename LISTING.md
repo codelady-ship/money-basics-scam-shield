@@ -32,6 +32,8 @@ Where it stops: educational only, not financial advice. Never picks stocks, coin
 
 **Compatibility note:** Works on any agent. Licence checks and official figures need web search; without it, the skill says "not checked" and the best verdict is Suspicious.
 
+**Plan compatibility:** works on Free, Pro, Max and Team plans. Without web search: licence "not checked", best verdict Suspicious, no official figures from memory; paste the register page to continue. Short on messages? Say so and it answers one part at a time.
+
 **Needs access to:** web search / web fetch (optional, for regulator registers).
 
 **Limitations / FAQ:**
